@@ -4,7 +4,6 @@
 */
 #ifndef UI_H
 #define UI_H
-#include "alert.h"
 #include <TFT_eSPI.h>
 #include <SPI.h>
 
