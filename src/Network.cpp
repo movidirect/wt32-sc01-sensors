@@ -31,7 +31,7 @@ void Network::readBluetooth()
             String password = data.substring(separatorIndex + 1, data.length()-2);
 
             //Store connection parameters in EEPROM
-            Serial.println("Guardando credenciales en la memoria EEPROM...");
+            Serial.println("Save credentials in EEPROM...");
             storeWiFiCredentials(ssid, password);
 
             //Try to connect to the WiFi network using the new parameters
@@ -45,7 +45,7 @@ void Network::connect()
     //Read the connection parameters stored in Preferences
     String ssid = preferences->getString("ssid", "");
     String password = preferences->getString("password", "");
-    Serial.println("Conectando a la red WiFi " + String(ssid.length()) + ":" + String(password.length()) + "...");
+    Serial.println("Connecting to Wifi" + String(ssid.length()) + ":" + String(password.length()) + "...");
 
     //Verify if valid connection parameters have been stored
     if (ssid.length() > 0 && password.length() > 0)
@@ -65,6 +65,7 @@ void Network::connect()
     }
     else
     {
-        Serial.println("No se han almacenado parámetros de conexión WiFi.");
+        Serial.println("No WiFi connection parameters have been stored.");
+
     }
 }

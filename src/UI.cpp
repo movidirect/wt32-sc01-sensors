@@ -20,8 +20,8 @@ UI::UI(bool render)
   {
     tft->drawRoundRect(5, 5, 475, 305, 5, TFT_SKYBLUE);
     tft->setTextColor(TFT_SKYBLUE, TFT_BLACK);
-    tft->drawString("Temperatura", 110, 270, 2);
-    tft->drawString("Humedad", 320, 270, 2);
+    tft->drawString("Temperature", 110, 270, 2);
+    tft->drawString("Humidity", 320, 270, 2);
     draw(0, 0);
   }
 }
