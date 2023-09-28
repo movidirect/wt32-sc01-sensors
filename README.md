@@ -1,7 +1,7 @@
 # wt32-sc01-DHT11
-Just for fun and learning purposes.
-Demo Running in WT32-SC01, a ESP32 board with OLED display and DHT11 sensor.
-Get WiFi connection credentials from Bluetooth. Get date and time from NTP server. 
+Just for fun and for learning purposes. Demo running on WT32-SC01, an ESP32 board with OLED display. 
+DHT11 sensor required. Retrieves credentials for a WiFi connection from Bluetooth. 
+Gets the date and time from an NTP server.
 
 
 
